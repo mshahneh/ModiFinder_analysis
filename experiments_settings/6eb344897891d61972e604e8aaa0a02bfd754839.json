@@ -1,0 +1,7 @@
+{
+    "id": "6eb344897891d61972e604e8aaa0a02bfd754839",
+    "method": "multiple_random_distribution",
+    "adducts": "M+H",
+    "library": "GNPS-NIH-NATURALPRODUCTSLIBRARY_ROUND2_POSITIVE",
+    "is_subtract": false
+}

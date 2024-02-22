@@ -1,0 +1,7 @@
+run_config.json
+data/
+results/*/evals/
+results/*/predictions
+work/
+/.nextflow
+*nextflow.log*

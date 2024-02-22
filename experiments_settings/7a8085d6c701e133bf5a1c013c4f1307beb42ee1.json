@@ -1,0 +1,14 @@
+{
+    "id": "7a8085d6c701e133bf5a1c013c4f1307beb42ee1",
+    "method": "ours",
+    "fragmentation_method": "MAGMa",
+    "fragmentation_depth": 2.0,
+    "fragment_filter": "sirius",
+    "adducts": "M+H",
+    "library": "GNPS-NIH-NATURALPRODUCTSLIBRARY_ROUND2_POSITIVE",
+    "use_unshifted": true,
+    "use_intensity": false,
+    "use_ppm": true,
+    "mz_tol": 40.0,
+    "is_subtract": false
+}

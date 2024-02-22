@@ -1,0 +1,7 @@
+{
+    "id": "7707be2809437b4fb532fec608d7375b26deb63e",
+    "method": "multiple_random_choice",
+    "adducts": "M+H",
+    "library": "GNPS-NIH-SMALLMOLECULEPHARMACOLOGICALLYACTIVE",
+    "is_subtract": false
+}

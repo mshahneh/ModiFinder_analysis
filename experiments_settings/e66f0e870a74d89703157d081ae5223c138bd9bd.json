@@ -1,0 +1,14 @@
+{
+    "id": "e66f0e870a74d89703157d081ae5223c138bd9bd",
+    "method": "ours",
+    "fragmentation_method": "MAGMa",
+    "fragmentation_depth": 2.0,
+    "fragment_filter": "oracle_nohelper",
+    "adducts": "M+H",
+    "library": "GNPS-MSMLS",
+    "use_unshifted": true,
+    "use_intensity": false,
+    "use_ppm": true,
+    "mz_tol": 40.0,
+    "is_subtract": false
+}

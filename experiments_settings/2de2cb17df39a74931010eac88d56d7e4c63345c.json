@@ -1,0 +1,7 @@
+{
+    "id": "2de2cb17df39a74931010eac88d56d7e4c63345c",
+    "method": "multiple_random_choice",
+    "adducts": "M+H",
+    "library": "GNPS-MSMLS",
+    "is_subtract": false
+}

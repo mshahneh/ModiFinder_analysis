@@ -1,0 +1,14 @@
+{
+    "id": "cbd8f2cb8733a82dfd1324990dcdfb8ba134a0bc",
+    "method": "ours",
+    "fragmentation_method": "MAGMa",
+    "fragmentation_depth": 4.0,
+    "fragment_filter": "none",
+    "adducts": "M+H",
+    "library": "BERKELEY-LAB",
+    "use_unshifted": true,
+    "use_intensity": false,
+    "use_ppm": true,
+    "mz_tol": 40.0,
+    "is_subtract": false
+}

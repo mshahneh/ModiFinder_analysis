@@ -1,0 +1,14 @@
+{
+    "id": "cba0a6d3029e3b106b30060b5ca0731d1f9eb073",
+    "method": "ours",
+    "fragmentation_method": "MAGMa",
+    "fragmentation_depth": 4.0,
+    "fragment_filter": "none",
+    "adducts": "M+H",
+    "library": "GNPS-NIH-SMALLMOLECULEPHARMACOLOGICALLYACTIVE",
+    "use_unshifted": true,
+    "use_intensity": false,
+    "use_ppm": true,
+    "mz_tol": 40.0,
+    "is_subtract": false
+}

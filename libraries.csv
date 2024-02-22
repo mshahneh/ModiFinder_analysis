@@ -1,0 +1,5 @@
+Library,short_name,Link
+GNPS-MSMLS,lib1, https://external.gnps2.org/gnpslibrary/GNPS-MSMLS.json
+GNPS-NIH-NATURALPRODUCTSLIBRARY_ROUND2_POSITIVE,lib2, https://external.gnps2.org/gnpslibrary/GNPS-NIH-NATURALPRODUCTSLIBRARY_ROUND2_POSITIVE.json
+GNPS-NIH-SMALLMOLECULEPHARMACOLOGICALLYACTIVE,lib3, https://external.gnps2.org/gnpslibrary/GNPS-NIH-SMALLMOLECULEPHARMACOLOGICALLYACTIVE.json
+BERKELEY-LAB,lib4, https://external.gnps2.org/gnpslibrary/BERKELEY-LAB.json
