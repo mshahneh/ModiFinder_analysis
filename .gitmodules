@@ -1,0 +1,3 @@
+[submodule "SmallMol_Mod_Site_Localization"]
+	path = SmallMol_Mod_Site_Localization
+	url = https://github.com/Wang-Bioinformatics-Lab/ModiFinder_base
