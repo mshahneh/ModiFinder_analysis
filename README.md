@@ -42,6 +42,16 @@ First, you need to set the directory of the data in `run_config` file. Then you 
 
     **Please note that the data for SIRIUS has to be dowloaded from the provided link in the previous section or use `gnps2` to run the workflow.**
 
+* You can download the random forest model and then load it using:
+    ```
+    import joblib
+    trained_model = joblib.load(trained_model_path)
+    inputs = trained_model['input']
+    model = trained_model['model']
+    ```
+    given that `scikit-learn==1.3.2` is installed.
+
+
 ## Experiments
 To run our experiments, you can run the following command:
     ```
