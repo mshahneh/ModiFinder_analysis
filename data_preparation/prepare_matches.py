@@ -12,6 +12,7 @@ import sys
 # add parent directory to path
 sys.path.insert(1, os.path.join(sys.path[0], '..'))
 from SmallMol_Mod_Site_Localization import utils_n as utils 
+from rdkit.Chem import rdMolDescriptors
 
 def disable_rdkit_logging():
     """
@@ -84,9 +85,12 @@ def calculate_matches(library_compounds, library_structures, cirteria, differenc
             w2 = float(compound2['Precursor_MZ'])
             m1 = library_structures[compound1['spectrum_id']]
             m2 = library_structures[compound2['spectrum_id']]
+            if pd.isnull(compound1['Formula_smiles']) or pd.isnull(compound2['Formula_smiles']):
+                compound1_formula = rdMolDescriptors.CalcMolFormula(m1)
+                compound2_formula = rdMolDescriptors.CalcMolFormula(m2)
             if m1.GetNumAtoms() < m2.GetNumAtoms() and m2.HasSubstructMatch(m1):
                 numModificationSites = len(utils.calculateModificationSites(m2, m1))
-                diff = convert_to_formula(get_diff(compound2['Formula_smiles'], compound1['Formula_smiles']))
+                diff = convert_to_formula(get_diff(compound2_formula, compound1_formula))
                 temp_data = {'id_bigger': compound2['spectrum_id'], 'id_smaller': compound1['spectrum_id'], 'num_modif_sites': numModificationSites, "diff_formula": diff}
                 temp_data['weight_bigger'] = w2
                 temp_data['weight_smaller'] = w1

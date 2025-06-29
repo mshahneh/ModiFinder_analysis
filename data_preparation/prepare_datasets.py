@@ -66,7 +66,7 @@ def clean_and_cache(library_data, data_folder, library_name, cleaned_spectras):
     compounds_data = {}
     structures_data = {}
 
-    columns = ["spectrum_id", "num_aromatic_rings", "num_atoms", "num_bonds", "num_rings", "not_connected", "formula_smiles"]
+    columns = ["spectrum_id", "num_aromatic_rings", "num_atoms", "num_bonds", "num_rings", "not_connected", "Formula_smiles"]
     structures_meta_data = pd.DataFrame(columns=columns)
 
     for i in tqdm(range(len(library_data)), ascii=True):
@@ -157,7 +157,7 @@ def main(project_root, run_config):
         library_compounds_data = df.merge(structures_meta_data, on="spectrum_id", how="inner")
         # select only the columns we need
         columns = ['spectrum_id', 'collision_energy', 'Adduct', 'Compound_Source', 'Formula_smiles',
-        'Compund_Name', 'Precursor_MZ', 'Precursor_MZ', 'Charge', 'msMassAnalyzer', "num_aromatic_rings", "num_atoms", "num_bonds", "num_rings", "not_connected"]
+        'Compund_Name', 'Precursor_MZ', 'Charge', 'msMassAnalyzer', "num_aromatic_rings", "num_atoms", "num_bonds", "num_rings", "not_connected"]
         library_compounds_data = library_compounds_data[columns]
 
         library_meta["mass_bigger_than_threshold"] = len(library_compounds_data[library_compounds_data['Precursor_MZ'] > run_config['data_prepare']['mass_threshold']])
